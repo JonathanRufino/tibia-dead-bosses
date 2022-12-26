@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bosses mortos</title>
+</head>
+<style>
+  :root {
+    --accent-color: #4C8BF5;
+    --accent-text-color: #FFF;
+  }
+
+  #boss-section {
+    width: fit-content;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  table {
+    border-collapse: collapse;
+  }
+  
+  tr {
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+
+  td {
+    min-width: fit-content;
+  }
+
+  tr:nth-child(odd) {
+    background-color: var(--accent-color);
+    color: var(--accent-text-color);
+  }
+
+  td {
+    padding: 2px 5px;
+  }
+
+  td + td {
+    padding-left: 10px;
+  }
+
+  td:nth-child(2) {
+    min-width: 140px;
+  }
+</style>
+<body>
+  <section id="boss-section">
+    <h1>Bosses mortos</h1>
+
+    <table>
+      <tbody id="boss-list">
+      </tbody>
+    </table>
+  </section>
+  <script src="popup.js"></script>
+</body>
+</html>

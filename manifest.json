@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Tibia - Bosses Mortos",
+  "description": "Veja quais bosses foram mortos hoje",
+  "version": "0.0.1",
+  "author": "Jonathan Rufino",
+  "permissions": ["tabs", "activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.tibia.com/community/?subtopic=killstatistics"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
