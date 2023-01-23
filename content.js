@@ -69,6 +69,12 @@ const bosses = [
   'Tanjis',
 ];
 
+function getBossImageURL(bossName) {
+  const parsedBossName = bossName.replaceAll(' ', '_');
+  const url = `https://tibiadraptor.com/images/bosses/${parsedBossName}.png`
+  return url;
+}
+
 chrome.runtime.sendMessage({
   from: 'content',
   subject: 'showPageAction',
@@ -86,7 +92,15 @@ chrome.runtime.onMessage.addListener((msg, sender, response) => {
           const killsCount = item.querySelector(':nth-child(3)').textContent;
 
           if (killsCount > 0) {
-            bossesKilled.push(`<tr><td>${killsCount}</td><td>${bossName}</td></tr>`);
+            bossesKilled.push(`
+              <tr>
+                <td>
+                  <img src="${getBossImageURL(bossName)}" />
+                </td>
+                <td>${killsCount}</td>
+                <td>${bossName}</td>
+              </tr>
+            `);
           }
         }
       })
