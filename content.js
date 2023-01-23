@@ -64,6 +64,9 @@ const bosses = [
   'Zarabustor',
   'Zevelon Duskbringer',
   'Zushuka',
+  'Jaul',
+  'Obujos',
+  'Tanjis',
 ];
 
 chrome.runtime.sendMessage({
