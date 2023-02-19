@@ -1,80 +1,228 @@
 const bosses = [
-  'Arachir the Ancient One',
-  'Arthom the Hunter',
-  'Barbaria',
-  'Battlemaster Zunzu',
-  'Big Boss Trolliver',
-  'Burster',
-  'Captain Jones',
-  'Countess Sorrow',
-  'crustaceae giganticae',
-  'Cublarc the Plunderer',
-  'Dharalion',
-  'Diblis the Fair',
-  'Dracola',
-  'Dreadful Disruptor',
-  'Dreadmaw',
-  'Elvira Hammerthrust',
-  'Flamecaller Zazrak',
-  'Fleabringer',
-  'Foreman Kneebiter',
-  'Furyosa',
-  'General Murius',
-  'Grandfather Tridian',
-  'Gravelord Oshuran',
-  'Groam',
-  'Grorlam',
-  'Hairman the Huge',
-  'Hatebreeder',
-  'High Templar Cobrass',
-  'Hirintror',
-  'Jaul',
-  'Mahatheb',
-  'Man in the Cave',
-  'Massacre',
-  'midnight panthers',
-  'Mornenion',
-  'Mr. Punish',
-  'Munster',
-  'Obujos',
-  'Ocyakao',
-  'Oodok Witchmaster',
-  'Rotworm Queens',
-  'Rukor Zad',
-  'Shlorg',
-  'Sir Valorcrest',
-  'Smuggler Baron Silvertoe',
-  'Tanjis',
-  'The Big Bad One',
-  'The Evil Eye',
-  'The Frog Prince',
-  'The Handmaiden',
-  'The Hungerer',
-  'The Imperor',
-  'The Manhunter',
-  'The Mean Masher',
-  'The Old Whopper',
-  'The Plasmother',
-  'The Voice Of Ruin',
-  'The Welter',
-  'Tyrn',
-  'Tzumrah the Dazzler',
-  'undead cavebears',
-  'Warlord Ruzad',
-  'White Pale',
-  'Willi Wasp',
-  'Xenia',
-  'Yaga the Crone',
-  'Yakchal',
-  'yetis',
-  'Zarabustor',
-  'Zevelon Duskbringer',
-  'Zushuka',
+  {
+    name: 'Arachir the Ancient One',
+  },
+  {
+    name: 'Arthom The Hunter',
+  },
+  {
+    name: 'Barbaria',
+  },
+  {
+    name: 'Battlemaster Zunzu',
+  },
+  {
+    name: 'Big Boss Trolliver',
+  },
+  {
+    name: 'Burster',
+  },
+  {
+    name: 'Captain Jones',
+  },
+  {
+    name: 'Countess Sorrow',
+  },
+  {
+    name: 'crustaceae giganticae',
+    image: 'monsters/Crustacea_Gigantica',
+  },
+  {
+    name: 'Cublarc the Plunderer',
+  },
+  {
+    name: 'Dharalion',
+  },
+  {
+    name: 'Diblis the Fair',
+  },
+  {
+    name: 'Dracola',
+  },
+  {
+    name: 'Dreadful Disruptor',
+  },
+  {
+    name: 'Dreadmaw',
+  },
+  {
+    name: 'Elvira Hammerthrust',
+  },
+  {
+    name: 'Flamecaller Zazrak',
+  },
+  {
+    name: 'Fleabringer',
+  },
+  {
+    name: 'Foreman Kneebiter',
+  },
+  {
+    name: 'Furyosa',
+  },
+  {
+    name: 'General Murius',
+  },
+  {
+    name: 'Grandfather Tridian',
+  },
+  {
+    name: 'Gravelord Oshuran',
+  },
+  {
+    name: 'Groam',
+  },
+  {
+    name: 'Grorlam',
+  },
+  {
+    name: 'Hairman the Huge',
+  },
+  {
+    name: 'Hatebreeder',
+  },
+  {
+    name: 'High Templar Cobrass',
+  },
+  {
+    name: 'Hirintror',
+  },
+  {
+    name: 'Jaul',
+  },
+  {
+    name: 'Mahatheb',
+  },
+  {
+    name: 'Man in the Cave',
+  },
+  {
+    name: 'Massacre',
+  },
+  {
+    name: 'midnight panthers',
+    image: 'monsters/Midnight_Panther',
+  },
+  {
+    name: 'Mornenion',
+  },
+  {
+    name: 'Mr. Punish',
+  },
+  {
+    name: 'Munster',
+  },
+  {
+    name: 'Obujos',
+  },
+  {
+    name: 'Ocyakao',
+  },
+  {
+    name: 'Oodok Witchmaster',
+  },
+  {
+    name: 'Rotworm Queens',
+    image: 'bosses/Rotworm_Queen',
+  },
+  {
+    name: 'Rukor Zad',
+  },
+  {
+    name: 'Shlorg',
+  },
+  {
+    name: 'Sir Valorcrest',
+  },
+  {
+    name: 'Smuggler Baron Silvertoe',
+  },
+  {
+    name: 'Tanjis',
+  },
+  {
+    name: 'The Big Bad One',
+  },
+  {
+    name: 'The Evil Eye',
+  },
+  {
+    name: 'The Frog Prince',
+  },
+  {
+    name: 'The Handmaiden',
+  },
+  {
+    name: 'The Hungerer',
+  },
+  {
+    name: 'The Imperor',
+  },
+  {
+    name: 'The Manhunter',
+  },
+  {
+    name: 'The Mean Masher',
+  },
+  {
+    name: 'The Old Whopper',
+  },
+  {
+    name: 'The Plasmother',
+  },
+  {
+    name: 'The Voice Of Ruin',
+  },
+  {
+    name: 'The Welter',
+  },
+  {
+    name: 'Tyrn',
+  },
+  {
+    name: 'Tzumrah The Dazzler',
+  },
+  {
+    name: 'undead cavebears',
+    image: 'monsters/Undead_Cavebear',
+  },
+  {
+    name: 'Warlord Ruzad',
+  },
+  {
+    name: 'White Pale',
+  },
+  {
+    name: 'Willi Wasp',
+  },
+  {
+    name: 'Xenia',
+  },
+  {
+    name: 'Yaga the Crone',
+  },
+  {
+    name: 'Yakchal',
+  },
+  {
+    name: 'yetis',
+    image: 'monsters/Yeti',
+  },
+  {
+    name: 'Zarabustor',
+  },
+  {
+    name: 'Zevelon Duskbringer',
+  },
+  {
+    name: 'Zushuka',
+  },
 ];
 
-function getBossImageURL(bossName) {
-  const parsedBossName = bossName.replaceAll(' ', '_');
-  const url = `https://tibiadraptor.com/images/bosses/${parsedBossName}.png`
+function getBossImageURL(boss) {
+  const parsedName = boss.name.replaceAll(' ', '_');
+  const image = boss?.image ?? `bosses/${parsedName}`;
+  const url = `https://tibiadraptor.com/images/${image}.png`
   return url;
 }
 
@@ -88,17 +236,19 @@ chrome.runtime.onMessage.addListener((msg, sender, response) => {
     let bossesKilled = [];
 
     document.querySelectorAll('#KillStatisticsTable > tbody > tr > td > div > table > tbody > tr')
-      .forEach(item => {
-        const bossName = item.querySelector(':nth-child(1)').textContent;
+      .forEach(tableRow => {
+        const bossName = tableRow.querySelector(':nth-child(1)').textContent;
       
-        if (bosses.some(item => item.toLowerCase() === bossName.toLowerCase())) {
-          const killsCount = item.querySelector(':nth-child(3)').textContent;
+        if (bosses.some(boss => boss.name.toLowerCase() === bossName.toLowerCase())) {
+          const killsCount = tableRow.querySelector(':nth-child(3)').textContent;
 
           if (killsCount > 0) {
+            const bossFound = bosses.find(item => item.name.toLowerCase() === bossName.toLowerCase());
+
             bossesKilled.push(`
               <tr>
                 <td>
-                  <img src="${getBossImageURL(bossName)}" />
+                  <img src="${getBossImageURL(bossFound)}" />
                 </td>
                 <td>${killsCount}</td>
                 <td>${bossName}</td>
